@@ -1,82 +1,73 @@
-console.log("Hello World");
-console.log("My name is "+ "George " + "i'm " + 42 + " year's old"); 
+console.log("Hello World!");
+console.log("My name is " + "Leo " + "I'm " + 30 + " years old");
 
 // This is a comment
 // STRING VARIABLES
 let name = "Peter";
-let LastName ="Parker";
+let lastName = "Parker";
 
-console.log("Peter");
+console.log(name);
+console.log(lastName);
 
-console.log("Parker");
-
-console.log("Hello " + "Peter " + "Parker.");
-
-console.log("Hello " + name + " " + LastName  + ".");
-
-// CREATING NUMRICAL VARIABLES
+// CREATING NUMERICAL VARIABLES
 let age = 35;
 console.log(age);
 
-let grade =9.5;
+let grade = 9.5;
 console.log(grade);
 
-// BOOLEAN VARIABLES (TRUE OR FALSE)
+// BOOLEAN VARIABLES(true or false)
 let isAProfessor = true;
 let isAStudent = false;
 let isAdmin = true;
-console.log(isAProfessor);
-console.log(isAStudent);
+
 console.log(isAdmin);
 
 /* Many lines of comments
-xxxxxxx
-xxxxxxx
-xxxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
 End of this comment */
 
-//addition
-let number1 = 50;
-let number2 = 5;
+let number1 = 8.3;
+let number2 = 4;
 let addition = (number1 + number2);
-console.log(number1 + number2 );
-//50 plus five equal 55
-//console.log(number1 + " plus " + number2 + " equals to " + (number1 + number2))
-console.log(number1 + " plus " + number2 + " equals to " + addition)
+// 50 plus five equal 55
+//console.log(number1 + " plus " + number2 + " equals to " + (number1 + number2));
+console.log(number1 + " plus " + number2 + " equals to " + addition); // addition
 
-number1 = 10;
+number1 = 7;
 number2 = 3;
-let subtraction = (number1 - number2);
-console.log(number1 + number2 );
-console.log(); //number1-number2 =
-console.log(number1 + " - " + number2 + " = " + subtraction);
+let substration = (number1 - number2);
+console.log(number1 + " - " + number2 + " = " + substration); //number1 - number2 = substration
 
-//mutiplication
-let mutiplication =(number1 * number2);
-console.log(number1 + " * " + number2 + " = " + mutiplication); 
+let multiplication = (number1 * number2);
+console.log(number1 + " * " + number2 + " = " + multiplication); // multiplication
 
-//division
-let division =(number1 / number2).toFixed(2);
-console.log(number1 + " / " + number2 + " = " + division);
+let division = (number1 / number2).toFixed(2);
+console.log(number1 + " / " + number2 + " = " + division); // division
 
-//Let Vs. Var
-let y=10;
+// LET VS VAR
+let y = 10;
 console.log(y);
+
 console.log(x);
-var x=5;
+var x = 5;
 
 //let school = "SDGKU";
-//let school = "School2"
+//let school = "School2";
 
 var school = "SDGKU";
-var school = "School2"
+var school = "School2";
+console.log(school);
 
-//use "let" dont use "var" 
-// //let: gives you more precise control over the variable's scope.
+//let: gives you more precise control over the variable's scope.
 //let is part of the modern best practices in JavaScript, while var is an older feature
 
-//constant variables
-// value cannot be reassigned or changed. 
+//CONSTANT VARIABLES
+const pi = 3.1416;
+const myName = "Leo";
+console.log(pi);
+console.log(myName);
+// const value cannot be reassigned or changed. 
 // It's useful when you want to make sure the value stays the same throughout your code.
-const pi=3.1416;
-const myName = "George";
