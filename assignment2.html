@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
     <title>Convert Celsius to Fahrenheit</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .fa-cloud-sun{
+            font-size: 50px;
+        }
+        .btn{
+            background-color: green;
+            color: white;
+        }
+        .btn-container{
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
 </head>
     <h1>Convert Celsius to Fahrenheit</h1>
-    <script src="./scripts/assignment2.js">
-        document.getElementById("result").innerText = temperatureInCelsius + temperatureInFahrenheit;
-    </script>
+    
+    <div class="container">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <i class="fa-solid fa-cloud-sun"></i>
+        <i class="fa-solid fa-cloud-sun"></i>
+    </div>
+    <div class="btn-container">
+        <button class="btn" onclick="convertTemperature()">Celsius to Fahrenheit</button>
+    </div>
+    <p id="result"></p>
+
+    <script src="./scripts/assignment2.js"></script>
 </body>
 </html>
