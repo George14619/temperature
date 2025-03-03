@@ -2,6 +2,7 @@ let positionX = 175; // Horizontal position
 let positionY = 175; // Vertical position
 let character = document.getElementById("character");
 
+
 function moveLeft() {
     if (positionX > 0) {
         positionX -= 10;

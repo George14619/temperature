@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h2>Temperature Range Converter</h2>
+    <label for="start">Start Temperature:</label>
+    <input type="number" id="start" placeholder="Enter start temperature">
+    <br>
+    <label for="end">End Temperature:</label>
+    <input type="number" id="end" placeholder="Enter end temperature">
+    <br>
+    <label for="scale">Scale:</label>
+    <select id="scale">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+    </select>
+    <br>
+    <button onclick="convertTemperatureRange()">Convert</button>
+    <h3>Results:</h3>
+    <div id="results"></div>
+
+    <script src="./scripts/assignment4.js"></script>
+</body>
+</html>
