@@ -1,82 +1,74 @@
-//document.write(`
-    //<p> 2 x 0 = 0</p>
-    //<p> 2 x 1 = 2</p>
-    //<p> 2 x 2 = 4</p>
-    //<p> 2 x 3 = 0</p>
-    //<p> 2 x 4 = 0</p>
-    //<p> 2 x 5 = 0</p>
-    //<p> 2 x 6 = 0</p>
-    //<p> 2 x 7 = 0</p>
-    //<p> 2 x 8 = 0</p>
-    //<p> 2 x 9 = 0</p>
-    //<p> 2 x 10 = 0</p>
-    //`)
+// start point
+// condition to stop
+// interval
 
-    //for(let i=0;i<11;i++){
-    ///    document.write(`<p> 2 * ${i} = ${i*2} </p>`)
-//}
+// FOR LOOP
+//Challenge 1: 
+// create a function that get a num from the prompt 
+// and displays on the console the multiplication table
 
-//for(let i=2; i<21; i+=2){
-//    document.write(`<p> 2 * ${i} = ${i*2} </p>`)
-//}
-//let num=5
-//let result=0;
-////or(let i=1;i<10;i++){
-   // result = num * i;
-    //document.write(`<p> ${num} * ${i} = ${result} </p>`)
-//}
+function multTable(){
+    //get the num from prompt
+    let num = Number(prompt("Enter the number:"));
+    let result =0;
+    document.write(`<h3> Table of ${num} </h3>`);
+    //loop i to 10
+    for(let i=0;i<=10;i++){
+        result = num * i;
+        document.write(`<p> ${num} x ${i} = ${result} </p>`);
+    } 
+}
 
-//nuiltTable();
+// // WHILE LOOP
+// let i=0;//start point
 
-//While Loop
-//let i=0;//start point
-//while(i<=10){//stop condition
-//    console.log(i);
-//    i++;//inerval
-//}
+// while(i<=10){ // stop condition
+//     console.log(i);
+//     i++;// interval
+// }
 
-//Do-while loop
-//let j=0;
-//do{
-//    console.log(j);
-//    j++;
-//}while(j<=10);
+// //DO-WHILE LOOP
+// let j=0;// start point
+// do{
+//     console.log(j);
+//     j++;// interval
+// }while(j<=10); //condition
 
-
-//while function
+// while function
 function startCountdown(){
     let seconds =10;
     let result ="";
     while (seconds>0){
-        result += `<p>Launching in ${seconds} seconds ...</p>`
-        seconds--; //discount one by one
+        result += `<p>Launching in ${seconds} seconds ...</p> `;
+        seconds--; // discount one by one
     }
-    result += "liftoff!!!"
+    result += "🚀Liftoff!!!"
     document.getElementById("output").innerHTML=result;
 }
 
 //do-while function
-function passwordPromt(){
-    let correctPassword="secret123"
+function passwordPrompt(){
+    let correctPassword="secret123";
     let userInput;
-    let result = "Simulating password input ..."
+    let result ="Simulating password input ... ";
 
     do{
-        userInput = prompt("Enter your password");
-        result += "User entered:" + userInput;
+        userInput = prompt("Enter your password:");
+        result += " User entered: " + userInput;
     }while(userInput !== correctPassword);
-    document.getElementById("output").innerHTML=result
+    result += "Welcome to the system";
+
+    document.getElementById("output").innerHTML=result;
 }
 
-
-//for loop
+//for loop 
 function showProducts(){
-    let showProducts =["Laptop", "Phone", "Tablet", "Smartwatch"];
+    let products = ["Laptop","Phone","Tablet","Smartwatch"];
     let result = "Available products";
 
-    for(let i=0;i<Products.lenght;++){
-        result += `<li>Product ${i+1}: ${Products}`;
+    for(let i=0;i<products.length;i++){
+        result += `<li>Product ${i+1}: ${products[i]}</li>`;
     }
 
-    document.getElementById("output").innerHTML.results;
+    document.getElementById("output").innerHTML=result;
 }
